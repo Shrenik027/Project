@@ -282,3 +282,26 @@ const result6 = mytext1.includes("I", 0);
 //Converting Number to a String;
 
 const Num = 42;
+
+const strnum = String(Num);
+// console.log(typeof strnum + strnum);
+
+//convert a boolean to string
+
+const bvalue = true;
+const strbool = String(bvalue);
+// console.log(typeof strbool);
+
+//array to string
+
+const arr = [1, 2, 3];
+// console.log(typeof String(arr));
+
+//Object to string
+
+const obj = { name: "Shrenik", age: 19 };
+// console.log(typeof String(obj));
+
+//converting Null And undefined
+const strNull = String(null);
+// console.log(typeof strNull);
