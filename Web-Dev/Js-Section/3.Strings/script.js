@@ -124,7 +124,7 @@ const result1 = string1.toUpperCase();
 
 //tolower
 const string2 = "SHreNIK";
-const result2 = string2.toLocaleLowerCase();
+const result2 = string2.toLowerCase();
 // console.log(result2);
 
 //case-insensitive comparision
@@ -173,7 +173,7 @@ if (usrname.length >= 6) {
 
 const greeting1 = "Hello, world";
 const extracted = greeting1.slice(7, 12);
-// console.log(extracted);
+//console.log(extracted);
 
 const text = "Hello, World";
 const result3 = text.slice(7, 9);
@@ -183,13 +183,13 @@ const result3 = text.slice(7, 9);
 
 const phrase = "Hello World";
 const endingText = phrase.slice(-6);
-// console.log(endingText);
+console.log(endingText);
 
 //slicing betwn negative indices
 
 const sentence1 = "hello World";
 const result4 = sentence1.slice(-6, -1);
-console.log(result4);
+// console.log(result4);
 
 //!----
 //!==String Split==
@@ -198,11 +198,12 @@ console.log(result4);
 //simple split by space
 
 const mysentence = "Hello, World, Name";
-const words = mysentence.split(",");
+const words = mysentence.split(" ");
 
 //limit No of split
 const fruits = "apple,banana,pear";
 const limitedFruits = fruits.split(",", 2);
+// console.log(limitedFruits);
 
 //split by multiple characters
 const complextext = "appple:banana;pear";
@@ -220,6 +221,7 @@ const letter = word.split("");
 
 const sentences = "Hello,World";
 const index = sentences.indexOf("Hello");
+// console.log(index);
 
 //!----
 //!==String Trim==
@@ -259,8 +261,8 @@ const mytext = "apple orange, apple ,banana ";
 const myresult = mytext.lastIndexOf("apple");
 
 //specifying the from index
-const resulti = mytext.lastIndexOf("apple", 12);
-
+const resulti = mytext.lastIndexOf("apple", 16);
+// console.log(resulti);
 //!----
 //!==String Includes==
 //!----
@@ -305,3 +307,63 @@ const obj = { name: "Shrenik", age: 19 };
 //converting Null And undefined
 const strNull = String(null);
 // console.log(typeof strNull);
+
+//!----
+//!==.toString()==
+//!----
+
+const num1 = 25;
+const strnum1 = num1.toString();
+//console.log(typeof strnum1);
+
+//Converting Boolean to String
+const boolVal = false;
+//console.log(typeof boolVal.toString());
+
+//!----
+//!==String To Number ==
+//!----
+
+const pixelval = "42px";
+const converted = parseInt(pixelval);
+// console.log(converted + 20);
+
+//Example 2: Converting Dimension String to Number With parseFloat()
+const dimensionstr = "42.5px";
+const convertedd = parseFloat(dimensionstr);
+// console.log(convertedd);
+
+//Example 2: Converting Age Input to Number With Number()
+
+const ageinput = "42";
+const convertednum = Number(ageinput);
+// console.log(convertednum + 10);
+
+//Example 4: Quick Conversion using Unary + Operator
+
+const score = "100";
+const converteddval = +score;
+// console.log(converteddval + 100);
+
+//!----
+//!==String To Boolean ==
+//!----
+
+//Example 1: Using Boolean() For Form Validation
+
+const usernameInput = "Thomas";
+const val = Boolean(usernameInput);
+// console.log(val);
+
+//Example 2: Using Boolean() with empty string
+
+const emptyfiels = "";
+const val1 = Boolean(emptyfiels);
+//console.log(val1);
+
+//Example 3: Using Double Negation !! For Quick Conversion
+
+const email = "email@gmail.com";
+const convertedVal = !!email;
+
+//console.log(convertedVal);
