@@ -1,0 +1,85 @@
+body {
+  background-color: #f1e5d1;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  background-color: #ffffff;
+  border: 2px solid #d1d8c5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  list-style-type: none;
+  display: flex;
+}
+.navbar a {
+  color: black;
+  margin: 10px;
+  border: 2px solid #d1d8c5;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px 8px;
+}
+.navbar a:hover {
+  background-color: #a0937d;
+}
+
+.heading {
+  background-color: #f9d689;
+  padding: 3px;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 350px;
+  border: 2px solid #fd9b63;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.heading:hover {
+  background-color: #d1d8c5;
+}
+
+.sub-heading {
+  text-align: center;
+  background-color: #f9d689;
+  padding: 0px;
+  text-align: center;
+  margin: 10px auto;
+  max-width: 200px;
+  border: 2px solid #fd9b63;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.skill-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skill-icons {
+  font-size: 5em;
+  margin: 0 10px;
+  padding: 30px;
+  display: block;
+}
+#icons {
+  padding-left: 30px;
+}
+.socialmedia-logo {
+  max-width: 30px;
+}
+.li-icon {
+  list-style-type: none;
+  margin: 10px;
+  display: inline;
+}
+.socialx {
+  text-align: center;
+  padding: 20px;
+}
+
+.contactinfo {
+  text-align: center;
+  padding-top: 20px;
+}
