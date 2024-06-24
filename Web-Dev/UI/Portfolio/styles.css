@@ -132,6 +132,11 @@ header {
 .skill-png img {
   padding-right: 20px;
   max-width: 100%;
+  transition: transform 0.3s ease 0s;
+}
+
+.skill-png img:hover {
+  transform: translateY(-5px);
 }
 /*! Project Section */
 
