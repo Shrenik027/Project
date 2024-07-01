@@ -37,15 +37,15 @@ const hello = function () {
 
 //invoke
 
-hello();
+//hello();
 
 const greetings = function () {
-  console.log("Welcome to Pakistan");
+  console.log("Welcome");
 };
 
 //invoke
 
-greetings();
+//greetings();
 
 //Even or odd
 
@@ -58,4 +58,28 @@ const num = function () {
   }
 };
 
-num();
+//num();
+
+//--
+//!-- Anonymous Functions
+//--
+
+// function(){
+//   console.log('Welcome');
+// }
+
+//--
+//!--Immediately Invoked Function Expression [IIFE]
+//--
+
+(function () {
+  console.log("welcome");
+})();
+
+//calculating Square of a number
+
+(function () {
+  const num = 5;
+  const square = num * num;
+  console.log(square);
+})();
