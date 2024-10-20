@@ -1,12 +1,18 @@
+// City Input Listener
+
 document.getElementById("city").addEventListener("input", function () {
   var city = this.value;
   getWeather(city);
 });
 
-async function getWeather() {
+// Fetching Weather Data
+async function getWeather(city = "New York") {
   try {
-    var city = document.getElementById("city").value;
-    console.log("Şəhər adı:", city);
+    if (!city) {
+      city = "New York"; // Fallback to New York if no city is provided
+    }
+
+    console.log("City name:", city);
 
     const response = await axios.get(
       "https://api.openweathermap.org/data/2.5/forecast",
@@ -18,12 +24,18 @@ async function getWeather() {
         },
       }
     );
+
+    /* Showing Jason format data */
     console.log(response);
+
+    //getting currentTemp using Response (Extracting Weather Data)
+
     const currentTemperature = response.data.list[0].main.temp;
 
     document.querySelector(".weather-temp").textContent =
       Math.round(currentTemperature) + "ºC";
 
+    // Forecast Data
     const forecastData = response.data.list;
 
     const dailyForecast = {};
@@ -51,6 +63,8 @@ async function getWeather() {
         );
       }
     });
+
+    // Updating the UI
 
     document.querySelector(".date-dayname").textContent =
       new Date().toLocaleDateString("en-US", { weekday: "long" });
@@ -95,9 +109,11 @@ async function getWeather() {
       iconElements[index].innerHTML = getWeatherIcon(data.icon);
     });
   } catch (error) {
-    console.error("Məlumat alınarkən səhv baş verdi:", error.message);
+    console.error("Error fetching data:", error.message);
   }
 }
+
+// Displaying Weather Icon
 
 function getWeatherIcon(iconCode) {
   const iconBaseUrl = "https://openweathermap.org/img/wn/";
@@ -105,7 +121,55 @@ function getWeatherIcon(iconCode) {
   return `<img src="${iconBaseUrl}${iconCode}${iconSize}" alt="Weather Icon">`;
 }
 
+// Auto Refresh After Every 15 Minutes
+
 document.addEventListener("DOMContentLoaded", function () {
   getWeather();
   setInterval(getWeather, 900000);
 });
+
+// Current Time
+
+function displayCurrentTime() {
+  const timeContainer = document.querySelector(".current-time");
+  setInterval(() => {
+    const now = new Date();
+    timeContainer.innerHTML = now.toLocaleTimeString();
+  }, 100);
+}
+displayCurrentTime();
+
+/* Feature - Set current location as default */
+// Using eoLocation for Current Location
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function (position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    getWeatherByLocation(latitude, longitude);
+  });
+}
+
+// Fetching Weather By Location
+
+async function getWeatherByLocation(lat, lon) {
+  try {
+    const response = await axios.get(
+      "https://api.openweathermap.org/data/2.5/forecast",
+      {
+        params: {
+          lat: lat,
+          lon: lon,
+          appid: "54a57bc234ad752a4f59e59cd372201d",
+          units: "metric",
+        },
+      }
+    );
+
+    const city = response.data.city.name;
+    document.getElementById("city").value = city; // Set the location in input field
+    getWeather(city); // Call getWeather with the city name
+  } catch (error) {
+    console.error("Error getting weather by location:", error.message);
+  }
+}

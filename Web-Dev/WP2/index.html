@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!--Stylesheet FontAwesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
+    <!--Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700"
     />
@@ -16,25 +19,37 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
     />
 
-    <link rel="Stylesheet" href="styles.css" />
+    <!--my css-->
+    <link rel="Stylesheet" href="Styles.css" />
   </head>
   <body>
     <div class="container">
+      <!--Weather Side-->
+
       <div class="weather-side">
+        <!--Date Container-->
+
         <div class="weather-gradient"></div>
         <div class="date-container">
           <h2 class="date-dayname"></h2>
           <span class="date-day"></span>
           <i class="fa-solid fa-location-dot"></i>
           <span class="location"></span>
+          <span class="current-time"></span>
         </div>
+
+        <!--Weather Container-->
         <div class="weather-container">
           <span class="weather-icon"></span>
           <h1 class="weather-temp"></h1>
           <h3 class="weather-desc"></h3>
         </div>
       </div>
+
+      <!--Humidity Wind section and Forecast section-->
       <div class="info-side">
+        <!--Todays Info-->
+
         <div class="today-info-container">
           <div class="today-info">
             <div class="humidity">
@@ -51,6 +66,9 @@
             </div>
           </div>
         </div>
+
+        <!--Weekly Forecast-->
+
         <div class="week-container">
           <ul class="week-list">
             <li>
@@ -76,6 +94,9 @@
             <div class="clear"></div>
           </ul>
         </div>
+
+        <!--Location Input-->
+
         <div class="location-container">
           <input
             class="location-input"
@@ -87,9 +108,17 @@
       </div>
     </div>
 
+    <!--JQuery For DOM Manipulation-->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="script.js"></script>
+
+    <!--Bootstrap-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Axios for HTTP requests And Fetching Data-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!--My Js-->
+    <script src="script.js"></script>
   </body>
 </html>

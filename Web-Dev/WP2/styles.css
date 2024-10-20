@@ -1,9 +1,50 @@
+/*Global Styles*/
+
+/* Montserrat Font from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
 
+/* Custom Css For Backgrounds */
 :root {
-  --gradient: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+  --clear-sky-day: linear-gradient(
+    135deg,
+    rgb(135, 206, 235) 10%,
+    rgb(176, 224, 230) 100%
+  );
+  --clear-sky-night: linear-gradient(
+    135deg,
+    rgb(25, 25, 112) 10%,
+    rgb(0, 0, 128) 100%
+  );
+  --cloudy: linear-gradient(
+    135deg,
+    rgb(176, 196, 222) 10%,
+    rgb(169, 169, 169) 100%
+  );
+  --rainy: linear-gradient(
+    135deg,
+    rgb(105, 105, 105) 10%,
+    rgb(119, 136, 153) 100%
+  );
+  --snowy: linear-gradient(
+    135deg,
+    rgb(240, 248, 255) 10%,
+    rgb(224, 255, 255) 100%
+  );
+  --sunset: linear-gradient(
+    135deg,
+    rgb(255, 99, 71) 10%,
+    rgb(255, 140, 0) 100%
+  );
+  --foggy: linear-gradient(
+    135deg,
+    rgb(192, 192, 192) 10%,
+    rgb(169, 169, 169) 100%
+  );
 }
 
+/* Basic Styling */
+
+/* *,.clear,body */
 * {
   box-sizing: border-box;
   line-height: 1.25em;
@@ -18,11 +59,18 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background: var(--gradient);
+  background-image: url(back.jpg);
+  background-size: cover; /* img covering Entire Background*/
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /*Img not repeated*/
+
+  /* Centering content orizontally and vertically */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* Main container styling */
 
 .container {
   border-radius: 25px;
@@ -32,11 +80,16 @@ body {
   height: 400px;
 }
 
+/* Weather Side Styling */
+
 .weather-side {
   position: relative;
   height: 100%;
   border-radius: 25px;
-  background-image: url("https://img.freepik.com/free-photo/sunset-beach-sea-wave_1150-11145.jpg");
+  background-image: url("Leonardo_Phoenix_A_serene_and_dreamy_digital_illustration_feat_0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 300px;
   box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
   transition: transform 300ms ease;
@@ -54,7 +107,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: var(--gradient);
+  background-image: var(--clear-sky-night);
   border-radius: 25px;
   opacity: 0.4;
 }
@@ -75,7 +128,11 @@ body {
 
 .location {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+.current-time {
+  display: block;
+  margin-top: 5px;
 }
 
 .location-icon {
@@ -105,6 +162,8 @@ body {
 .weather-desc {
   margin: 0;
 }
+
+/* Info-Side Styles */
 
 .info-side {
   position: relative;
@@ -195,14 +254,19 @@ body {
   padding: 25px 35px;
 }
 
+/* Input Styling */
+
 .location-input {
+  display: block;
+  margin: 0 auto;
   position: relative;
-  width: 100%;
+  width: 300px;
+  text-align: center;
   border: none;
   border-radius: 25px;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
-  background-image: var(--gradient);
+  background-image: var(--rainy);
   color: #000000;
   font-weight: 700;
   box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
