@@ -1,8 +1,8 @@
-//--
-//!--Selecting Elementss using getElementById
-const conferenceTitleEl = document.getElementById("conferenceTitle");
+//----
+//!-- Selecting Element using getElementById
+//---
 
-//console.log(conferenceTitleEl.innerHTML);
+const conferenceTitleEl = document.getElementById("conferenceTitle");
 
 const conferenceDateEl = document.getElementById("conferenceDate");
 
@@ -12,13 +12,13 @@ const conferenceLocationEl = document.getElementById("conferenceLocation");
 
 const speakersTitleEl = document.getElementById("speakersTitle");
 
-const speakersListEl = document.getElementById("speakersList");
+const speakerListEl = document.getElementById("speakerList");
 
 console.log({
-  conferenceTitleEl,
   conferenceDateEl,
+  conferenceTitleEl,
   locationTitleEl,
   conferenceLocationEl,
+  speakerListEl,
   speakersTitleEl,
-  speakersListEl,
 });

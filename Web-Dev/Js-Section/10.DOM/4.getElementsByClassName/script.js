@@ -1,21 +1,24 @@
 //Selecting all Elements with the class name "Fiction"
 
 const fictionBooksEl = document.getElementsByClassName("fiction");
-// console.log(fictionBooksEl);
 
-//Selecting All Elements with the class name "non-fiction" within the nonFictionSection
+//Selecting all elements with class name "non-fiction"
 
 const nonFictionEl = document.getElementById("nonFictionSection");
+//console.log(nonFictionEl);
 
 const nonFictionBooksInSectionEl =
   nonFictionEl.getElementsByClassName("non-fiction");
 
-// console.log(nonFictionBooksInSectionEl[1]);
-//console.log(fictionBooksEl);
+//console.log(nonFictionBooksInSectionEl[1]);
 
-//First convert into an Array
-fictionBooksElArr = Array.from(fictionBooksEl);
+console.log(fictionBooksEl);
+//Looping Through the HTMLCollection
 
-const fictionBooksElTitle = fictionBooksElArr.map((el) => el.innerHTML);
+//First convert into an array
+
+const fictionBooksArr = Array.from(fictionBooksEl);
+
+const fictionBooksElTitle = fictionBooksArr.map((el) => el.innerHTML);
 
 console.log(fictionBooksElTitle);

@@ -1,22 +1,19 @@
 //Get First Product Ca0rd
-
 const firstProductCardEl = document.querySelector(".product-card");
+console.log(firstProductCardEl);
 
-//console.log(firstProductCardEl);
+//get heigest rated product
 
-//Get Heighest-Rated Product
+const highestRatingEl = document.querySelector("[data-rating = '4.8']");
 
-const heigestRating = document.querySelector("[data-rating = '4.8']");
+console.log(highestRatingEl);
 
-//console.log(heigestRating);
+//get first laptop category product
+const laptopEl = document.querySelector("[data-category='laptop']");
 
-//Get Laptop Category Product
+console.log(laptopEl);
 
-const LaptopEl = document.querySelector("[data-category = 'laptop']");
-//console.log(LaptopEl);
-
-//Selecting An ID
+//selecting an id
 
 const dashboardEl = document.querySelector("#dashboard");
-
-//console.log(dashboardEl);
+console.log(dashboardEl);
