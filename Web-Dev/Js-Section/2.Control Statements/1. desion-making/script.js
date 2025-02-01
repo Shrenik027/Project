@@ -26,4 +26,19 @@ switch (day) {
   default:
     dayname = "holiday";
 }
-console.log(dayname);
+// console.log(dayname);
+
+//! For Loop
+
+for (let i = 0; i <= 10; i++) {
+  // console.log(i);
+}
+
+//! While Loop
+
+let count = 1;
+while (count <= 5) {
+  console.log(count);
+
+  count++;
+}

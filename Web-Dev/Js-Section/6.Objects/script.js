@@ -86,4 +86,22 @@ emp.adderess = {
   city: "Karad",
   state: "Maharashtra",
 };
-console.log(emp.adderess.city);
+// console.log(emp.adderess.city);
+
+//! Objects Updated
+
+const person1 = {
+  name: "Alice",
+  age: 23,
+  city: "new York",
+};
+
+//Adding properties to object
+//!Dot Notation
+person1.ismarried = false;
+
+//!Bracket Notation
+person1["Hobby"] = "Coading";
+
+person1["courses"] = ["js", "html", "css", "node"];
+console.log(person1);

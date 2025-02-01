@@ -93,7 +93,7 @@ const newfruits = fruits.push("Kiwi", "Peru");
 //unshift
 
 const fruitnew = fruits.unshift("Guava", "mango");
-console.log(fruits);
+// console.log(fruits);
 
 //! .pop() and .shift()
 
@@ -103,12 +103,12 @@ const popped = fruits.pop();
 const shifted = fruits.shift();
 // console.log(shifted);
 
-console.log(fruits);
+// console.log(fruits);
 
 //! .length()
 
 const length = fruits.length;
-console.log(length);
+// console.log(length);
 
 //modify length of array
 
@@ -122,5 +122,14 @@ fruits.length = 2;
 // numbers 1-5
 
 for (let i = 0; i <= 5; i++) {
-  console.log(i);
+  // console.log(i);
 }
+
+//! Array Updated Course
+
+let fruit2 = ["apple", "banana", "strawberry", "kiwi"];
+fruit2.push("Pineapple");
+
+let asscessApple = fruit2[0];
+
+console.log();
