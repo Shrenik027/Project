@@ -1,18 +1,18 @@
 function collectData() {
-  const languageProficiencyEls = document.getElementsByName(
-    "languageProficiency"
-  );
+  const LanguageproffEls = document.getElementsByName("languageProficiency");
 
-  console.log(languageProficiencyEls);
+  console.log(LanguageproffEls);
 
-  // Loop THorugh ht enodelist to find the selected radio button
+  //Loop Through the NodeList to Find the selected radio button
 
-  for (let i = 0; i < languageProficiencyEls.length; i++) {
-    if (languageProficiencyEls[i].checked) {
-      console.log(`swlected Language is: ${languageProficiencyEls[i].value}`);
+  for (let i = 0; i < LanguageproffEls.length; i++) {
+    if (LanguageproffEls[i].checked) {
+      console.log(`selected Language:${LanguageproffEls[i].value}`);
     }
   }
-  // log all elements with the name 'email'
-  const emailsEl = document.getElementsByName("email");
-  console.log(emailsEl);
+
+  //log all the elements with the name email
+
+  const EmailsEl = document.getElementsByName("email");
+  console.log(EmailsEl);
 }

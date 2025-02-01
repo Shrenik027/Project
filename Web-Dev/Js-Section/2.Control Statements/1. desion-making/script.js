@@ -1,51 +1,29 @@
-//if example:
-let instock = true;
-if (instock) {
-  // console.log("item is in stock");
-}
+//! IF-Else
 
-let age = 19;
+let age = 16;
 
-if (age >= 19) {
-  console.log("You are eligible");
-}
-let loginstatus = 450;
-
-if (loginstatus === true) {
-  console.log("Welcome Back");
-} else if (loginstatus === false) {
-  console.log("plz login");
-} else if (loginstatus === 0) {
-  console.log("0");
+if (age >= 16) {
+  // console.log("You are eligible to drive");
+} else if (age >= 18) {
+  // console.log("you are eligible to vote");
 } else {
-  console.log("1");
+  // console.log("you are tooo younge");
 }
 
-let dayno = 5;
-
-switch (dayno) {
-  case 0:
-    console.log("Sunday");
-    break;
+//! Switch Case
+const day = 4;
+let dayname;
+switch (day) {
   case 1:
-    console.log("Monday");
+    dayname = "Monday";
     break;
   case 2:
-    console.log("Tuesday");
+    dayname = "Tuesday";
     break;
   case 3:
-    console.log("wednesday");
+    dayname = "Wednesday";
     break;
-  case 4:
-    console.log("Thursday");
-    break;
-  case 5:
-    console.log("Friday");
-    break;
-  case 6:
-    console.log("saturday");
-    break;
-
   default:
-    console.log("Enter Valid Day no.");
+    dayname = "holiday";
 }
+console.log(dayname);

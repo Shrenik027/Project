@@ -2,23 +2,21 @@
 
 const fictionBooksEl = document.getElementsByClassName("fiction");
 
-//Selecting all elements with class name "non-fiction"
+//selecting all elements with the class name "non-fiction" within the nonfictionSection
 
 const nonFictionEl = document.getElementById("nonFictionSection");
-//console.log(nonFictionEl);
 
-const nonFictionBooksInSectionEl =
+const nonfictionbooksinsectionEl =
   nonFictionEl.getElementsByClassName("non-fiction");
+// console.log(nonfictionbooksinsectionEl[1]);
 
-//console.log(nonFictionBooksInSectionEl[1]);
+// console.log(fictionBooksEl);
+//loop through html colection
 
-console.log(fictionBooksEl);
-//Looping Through the HTMLCollection
+//First convert into array
 
-//First convert into an array
+const fictionBooksElArr = Array.from(fictionBooksEl);
 
-const fictionBooksArr = Array.from(fictionBooksEl);
-
-const fictionBooksElTitle = fictionBooksArr.map((el) => el.innerHTML);
+const fictionBooksElTitle = fictionBooksElArr.map((el) => el.innerHTML);
 
 console.log(fictionBooksElTitle);

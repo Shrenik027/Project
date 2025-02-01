@@ -70,6 +70,25 @@ body {
   justify-content: center;
 }
 
+/* Site-Title */
+
+.site-title {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  bottom: 10px; /* Move it further down */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
 /* Main container styling */
 
 .container {

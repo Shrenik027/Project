@@ -2,7 +2,7 @@
 //!-- WINDOW OBJECT
 //---
 
-// console.log(window);
+//console.log(window.document);
 // console.log(window.innerWidth);
 // console.log(innerWidth);
 // console.log(window.innerHeight);
