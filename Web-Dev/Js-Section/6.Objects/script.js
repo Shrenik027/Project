@@ -104,4 +104,95 @@ person1.ismarried = false;
 person1["Hobby"] = "Coading";
 
 person1["courses"] = ["js", "html", "css", "node"];
-console.log(person1);
+// console.log(person1);
+
+//! Object.keys
+
+const keys = Object.keys(person1);
+// console.log(keys);
+
+//! Object.values
+
+const car = {
+  brand: "honda",
+  model: "Accord",
+  year: "2025",
+};
+
+const values = Object.values(car);
+// console.log(values);
+
+//! hasOwnProperties
+
+const hasProperty = car.hasOwnProperty("brand");
+// console.log(hasProperty);
+
+//! Object.assign
+const target = { name: "Thomas" };
+const src = { age: 20 };
+Object.assign(target, src);
+// console.log(target);
+
+//!Delete operator
+
+delete car.brand;
+// console.log(car);
+
+//!object.freeze
+
+Object.freeze(car);
+
+//modify
+car.make = "Nissaan";
+// console.log(car);
+
+//!Nesting Object
+
+const user = {
+  name: "Twinkle",
+  age: 30,
+  adderess: {
+    street: "123 Main Street",
+    city: "New York",
+    country: {
+      name: "India",
+      state: "Maharashtra",
+    },
+  },
+};
+// console.log(user);
+
+//Access Nested obj prop
+
+const userName = user.name;
+const userAdd = user.adderess.street;
+const userCountry = user.adderess.country.name;
+// console.log(userCountry);
+
+const countryName = user["adderess"]["country"]["name"];
+// console.log(countryName);
+
+//!Object in an Array
+
+const usersObj = [
+  { name: "Alice", age: 28, country: "USA" },
+  { name: "Goku", age: 45, ciry: "India" },
+];
+// console.log(usersObj);
+
+//! Accessing Properties
+
+const firstUser = usersObj[0];
+// console.log(firstUser);
+
+//!Add new User to array
+
+usersObj.unshift({ name: "Devil", age: 100000, city: "Hell" });
+// console.log(usersObj);
+
+//!Modify the arrays of Object
+
+//update Alice name to Kira
+
+usersObj[1].name = "Kira";
+// console.log(usersObj);
