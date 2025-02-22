@@ -3,122 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nik's Portfolio</title>
   </head>
   <body>
-    
-      <header>
-      <nav>
-        <ul  class="navbar">
-          <li ><a href="#content"> About Me</a></li>
-          <li ><a href="#experience">Experience</a></li>
-          <li ><a href="#skills">Skills</a></li>
-          <li ><a href="#projects">Projects</a></li>
-          <li ><a href="#media">Social Media</a></li>
-          <li> <a href="#contact">Contact Info</a></li>
-         
-        </ul>
-      </nav>
-      </header>
-    <main>
-    <div class="heading">
-      <h1>MY PORTFOLIO</h1>
-    </div>
-
-    <section id="content"  class="about-box">
-
-      
-        <h2 class="sub-heading">About Me</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ad alias accusamus sed vero hic, voluptatum magnam sequi necessitatibus ea laborum ipsa doloribus in harum nostrum minima libero quas corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam dolore voluptas dicta corporis maxime, quae, expedita magni similique commodi ducimus, blanditiis enim debitis vero maiores. Maiores excepturi sint nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, hic non laboriosam minima expedita ducimus consequuntur nemo unde blanditiis fugiat quisquam amet corrupti quia vitae, ipsum perferendis? Iste, beatae? Nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo laudantium consectetur autem distinctio, iusto labore modi quas dolore quam in quod animi maiores est quo? Suscipit atque beatae ipsa maxime. vero hic, voluptatum magnam sequi necessitatibus ea laborum ipsa doloribus in harum nostrum minima libero quas corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam dolore voluptas dicta corporis maxime, quae, expedita magni similique commodi ducimus, blanditiis enim debitis vero maiores. Maiores excepturi sint nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, hic non laboriosam minima expedita ducimus consequuntur nemo unde blanditiis fugiat quisquam amet corrupti quia vitae, ipsum perferendis? Iste, beatae? Nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo laudantium consectetur autem distinctio, iusto labore modi quas dolore quam in quod animi maiores est quo? Suscipit atque beatae ipsa maxime.</p>
-     
-      
-     
-    </section>
-    <section id="experience" class="exp-box" >
-      <h2 class="sub-heading">My Experience</h2>
-      <p>
-        Professional Journey
-        Current Role:
-        In my current role as a [Your Current Job Title], I am responsible for overseeing various projects and ensuring their successful completion. My key responsibilities include:
-
-        Leading the development and implementation of innovative solutions.
-        Managing project timelines, budgets, and resources efficiently.
-        Collaborating with cross-functional teams to achieve project goals.
-        Through this role, I have honed my skills in project management, problem-solving, and team collaboration, consistently delivering high-quality results that meet and exceed client expectations.
-      <p>
-
-         Previous Experience
-        Past Roles:
-        In my previous roles, I have gained extensive experience in [Your Field or Industry]. My responsibilities have ranged from [briefly describe general responsibilities, such as software development, design, marketing, etc.], allowing me to develop a versatile skill set.
-      </p>
-      </p>
-    </section>
-    <section id="skills" >
-      <h2 class="sub-heading">Skills</h2>
-      <div class="skill-png">
-          <img src="png & logo/html (1).png" alt="html-png" width="80" class="png">
-          <img src="png & logo/css-3_732190.png" alt="css-png" width="80" class="png">
-          <img src="png & logo/js.png" alt="js-png" width="80" class="png">
-          <img src="png & logo/react.png" alt="react png" width="85" class="png">
-         <img src="png & logo/nodejs.png" alt="nodejs-png" width="100" >
-         <img src="png & logo/bootstrap-5-logo-icon.png" alt="bootstrap-png" width="95">
-          <!-- Add more icons as needed -->
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo"><i class="fas fa-code"></i></div>
+        <div class="nav-links">
+          <a href="#home"><i class="fas fa-home"></i> Home</a>
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+          <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+          <a href="#works"><i class="fas fa-project-diagram"></i> Works</a>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          <a
+            href="https://drive.google.com/file/d/18XBFDzf2rG1HqSKEEF7TCmeB8FcE41qD/view?usp=sharing"
+            target="_blank"
+          >
+            <i class="fas fa-file-alt"></i>Resume
+          </a>
+        </div>
+        <button class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-  </section>
-    <section id="projects" class="proj">
-      <div class="project-div">
-        <div> <h2  class="sub-heading">Projects</h2></div>
-      <div class="project-name">
-        <h3>1. Project Name: Loading Page</h3>
-        <label for="link">Link:</label>
-        <a href="https://github.com/Shrenik027/Project/tree/main/Web-Dev/UI/Loading%20Page">https://github.com/Shrenik027/Project/tree/main/Web-Dev/UI/Loading%20Page</a>
+    </nav>
 
+    <!-- Header -->
+    <header id="home" class="header">
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Hi, I'm <span class="auto-type"></span></h1>
+          <p>
+            A passionate Full Stack Developer crafting beautiful and functional
+            web experiences
+          </p>
+          <a href="#contact" class="cta-btn">Get In Touch</a>
+        </div>
       </div>
-      <div class="project-name">
-        <h3 >2. Project Name: Portfolio Page</h3>
-        <label for="link">Link:</label>
-        <a href="https://github.com/Shrenik027/Project/blob/main/Web-Dev/UI/Yoga%20Blog/index.html">https://github.com/Shrenik027/Project/blob/main/Web-Dev/UI/Yoga%20Blog/index.html</a>
-      </div>
-      </div>
-       
-    </section>
-    <div>
+    </header>
 
-    </div>
-    
-  </main>
-  <footer>
-    <div id="media">
-      <h2 class="sub-heading">My Social Media</h2>
-      
-        <ul class="socialx">
-          <li class="li-icon">
-            <a href="https://www.instagram.com/?hl=en"><img class="socialmedia-logo" src="png & logo/instagram-logo_87390.png" alt=""></a>
-          </li>
-          
-        
-          <li class="li-icon">  <a href="https://www.facebook.com"><img class="socialmedia-logo" src="png & logo/facebook-logo_49354.png" alt="facebook-png"></a></li>
-
-          <li class="li-icon"> <a href="https://github.com/Shrenik027/Project"> <img src="png & logo/github_3291695.png" 
-            class="socialmedia-logo" alt="githud-png"></a></li>
-      
-        </ul>
-     
-      
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <div class="profile-img">
+          <img src="FullSizeRender .jpg" alt="Shrenik Dubal" />
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I'm a Full Stack Developer with hands on experience in building
+            scalable web applications. I specialize in JavaScript technologies
+            across the entire stack and have a passion for creating elegant
+            solutions to complex problems.
+          </p>
+          <p>
+            When I'm not coding, you can find me contributing to open-source
+            projects, writing technical articles, or exploring new technologies.
+          </p>
+        </div>
       </div>
     </section>
-    <section id="contact" >
-      <h2 class="sub-heading">Contact Info</h2>
-      <div class="contactinfo">
-      <label >Gmail:shrenikdubal@gmail.com</label>
-      </div>
-      <div class="contactinfo">
-      <label >Mobo:8928609477</label>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="skills-content">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <!-- skill 1 -->
+          <div class="skills-card">
+            <i class="fa-brands fa-square-js"></i>
+            <h3>JavaScript</h3>
+            <p>Expert in modern JavaScript, including ES6+ features</p>
+          </div>
+          <!-- skill2 -->
+          <div class="skills-card">
+            <i class="fa-brands fa-node"></i>
+            <h3>Node.js</h3>
+            <p>Server-side development with Node.js and Express</p>
+          </div>
+          <!-- skill 3 -->
+          <div class="skills-card">
+            <i class="fas fa-database"></i>
+            <h3>Database</h3>
+            <p>Experience with SQL and NoSQL databases</p>
+          </div>
+          <!-- skill 4 -->
+          <div class="skills-card">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <p>Expert in modern JavaScript, including ES6+ features</p>
+          </div>
+        </div>
       </div>
     </section>
-  </footer>
-   
+
+    <!-- Works -->
+    <section id="works" class="works">
+      <div class="works-content">
+        <h2 class="section-title">Recent Works</h2>
+        <div class="works-grid">
+          <!-- work 1 -->
+          <div class="work-card">
+            <img
+              src="https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="project 1"
+            />
+            <div class="work-info">
+              <div>
+                <h3>Split & Share</h3>
+                <p>
+                  A smart tool to calculate and split bills fairly, perfect for
+                  group dining or shared expenses.
+                </p>
+              </div>
+              <div class="work-link">
+                <a href="https://splitndshare-nik.netlify.app/" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- work 2 -->
+          <div class="work-card">
+            <img
+              src="https://images.pexels.com/photos/4968384/pexels-photo-4968384.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="project 2"
+            />
+            <div class="work-info">
+              <div>
+                <h3>Smart Loan Calculator</h3>
+                <p>
+                  An intuitive tool to calculate monthly loan payments and total
+                  interest effortlessly
+                </p>
+              </div>
+              <div class="work-links">
+                <a
+                  href="https://smartloancalculator-nik.netlify.app/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Live
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- work 3 -->
+          <div class="work-card">
+            <img
+              src="https://images.pexels.com/photos/3700908/pexels-photo-3700908.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="project 2"
+            />
+            <div class="work-info">
+              <div>
+                <h3>Weather Project</h3>
+                <p>
+                  A weather app providing real-time weather updates based on
+                  user location or search input.
+                </p>
+              </div>
+              <div class="work-links">
+                <a href="https://w2p-nik.netlify.app/" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="contact-content">
+        <h3 class="section-title">Get in Touch</h3>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea rows="5" id="message"></textarea>
+          </div>
+          <button class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 BuildWithNik. All rights reserved</p>
+      <div class="social-links">
+        <a href="https://github.com/Shrenik027" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/shrenik-dubal-b1692029a/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://x.com/Shrenik_Dubal" target="_blank"
+          ><i class="fa-brands fa-square-x-twitter"></i
+        ></a>
+        <a href="https://gitlab.com/shrenik9477" target="_blank"
+          ><i class="fa-brands fa-gitlab"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
