@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       movieResults.innerHTML =
         '<div class ="loading">Searching Movies...</div>';
       const response = await fetch(
-        `http://www.omdbapi.com?apikey=7b2f0bc7&s=${movieName}`
+        `https://www.omdbapi.com?apikey=7b2f0bc7&s=${movieName}`
       );
       const data = await response.json();
       if (data.Response === "False") {
