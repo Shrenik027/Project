@@ -595,3 +595,126 @@ form h2 .SocialLinks i:hover {
 .about-us {
   overflow: auto;
 }
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .Links {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  aside li {
+    padding: 10px;
+  }
+
+  .HomeContent {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .SideImg {
+    width: 60%;
+    margin: 20px auto;
+    display: none;
+  }
+
+  .buttonGroup {
+    justify-content: center;
+  }
+
+  .about-us,
+  .skills,
+  .works,
+  .contactMe {
+    padding: 20px;
+  }
+
+  .about-me-table {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .contactMe {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+  }
+
+  .contactMe form {
+    grid-area: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .contactMe form input,
+  .contactMe form textarea {
+    width: calc(100% - 40px);
+  }
+
+  .contactinfo {
+    padding: 10px 0;
+  }
+
+  .contactinfo i {
+    font-size: 2rem;
+  }
+
+  .contactMe form h2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SocialLinks {
+    margin-top: 10px;
+  }
+}
+
+/* For screens smaller than 480px (e.g., small mobile devices) */
+@media (max-width: 480px) {
+  .HomeContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .HomeContent h2 {
+    font-size: 2rem;
+  }
+
+  .heroline {
+    font-size: 1.2rem;
+  }
+
+  .SideImg {
+    width: 80%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    min-width: 100%;
+  }
+
+  .contactMe form input,
+  .contactMe form textarea {
+    margin: 10px;
+    width: calc(100% - 20px);
+  }
+
+  .contactMe button {
+    margin: 10px auto;
+  }
+}
